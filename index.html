@@ -1,54 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Divyansh Maurya — AI / ML Engineer & Software Developer</title>
-  <meta name="description" content="Divyansh Maurya — MS Computer Science @ NYU, AI Developer building LLM-powered systems, agentic RAG, and document-intelligence pipelines. Former Software Development Engineer at Fastenal." />
+  <meta name="description" content="Divyansh Maurya — M.S. Computer Science at NYU, AI Developer, and Software Engineer. 2+ years building production software, LLM-powered systems, and reliable backend services." />
   <meta name="author" content="Divyansh Maurya" />
-  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Divyansh Maurya — AI / ML Engineer & Software Developer" />
-  <meta property="og:description" content="MS Computer Science @ NYU · AI Developer building LLM-powered systems, agentic RAG, and document-intelligence pipelines." />
+  <meta property="og:description" content="M.S. Computer Science at NYU · AI Developer · Former Software Development Engineer at Fastenal." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Divyansh Maurya — AI / ML Engineer & Software Developer" />
-  <meta name="twitter:description" content="MS Computer Science @ NYU · AI Developer building LLM-powered systems and agentic RAG." />
+  <meta name="twitter:description" content="M.S. Computer Science at NYU · AI Developer · Former Software Development Engineer at Fastenal." />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Page load progress / scroll indicator -->
-  <div class="scroll-progress" aria-hidden="true"></div>
+  <span class="top-accent" aria-hidden="true"></span>
 
-  <!-- Ambient background -->
-  <div class="ambient" aria-hidden="true">
-    <div class="aurora aurora-1"></div>
-    <div class="aurora aurora-2"></div>
-    <div class="aurora aurora-3"></div>
-    <div class="grid-overlay"></div>
-    <div class="noise"></div>
-  </div>
-
-  <!-- Spotlight that follows cursor -->
-  <div class="spotlight" aria-hidden="true"></div>
-
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#hero" class="nav__brand" aria-label="Divyansh Maurya — home">
-        <span class="nav__mark">DM</span>
-        <span class="nav__name">Divyansh Maurya</span>
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Divyansh Maurya — home">
+        <span class="brand__mark">DM</span>
+        <span class="brand__text">
+          <span class="brand__name">Divyansh Maurya</span>
+          <span class="brand__role">AI / ML Engineer</span>
+        </span>
       </a>
 
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#about">About</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#summary">Summary</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -56,21 +46,19 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <div class="nav__actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
-          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-        <a href="assets/Divyansh_Maurya_Resume.pdf" class="btn btn--ghost nav__resume" download>Résumé</a>
-        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <div class="header__actions">
+        <a href="assets/Divyansh_Maurya_Resume.pdf" class="btn btn--primary btn--sm" download>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Résumé
+        </a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
-    <!-- Mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
+      <a href="#summary">Summary</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -80,290 +68,268 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- ============ HERO ============ -->
-    <section class="hero" id="hero">
-      <div class="hero__inner">
-        <p class="hero__eyebrow reveal">
-          <span class="status-dot"></span>
-          Available for AI / ML & Software roles
-        </p>
-
-        <h1 class="hero__title reveal">
-          <span class="hero__hi">Hi, I'm</span>
-          <span class="hero__name gradient-text">Divyansh Maurya</span>
-        </h1>
-
-        <p class="hero__role reveal">
-          <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span>
-        </p>
-
-        <p class="hero__tagline reveal">
-          I build <em>LLM-powered systems</em> — from document-intelligence pipelines and
-          agentic RAG to brain–computer interfaces. Currently pursuing my
-          <em>MS in Computer Science at NYU</em>, with 2+ years shipping production
-          software at scale.
-        </p>
-
-        <div class="hero__cta reveal">
-          <a href="#projects" class="btn btn--primary">
-            View my work
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__main reveal">
+          <p class="eyebrow">AI / ML Engineer · Software Developer</p>
+          <h1 class="hero__name">Divyansh Maurya</h1>
+          <p class="hero__lede">
+            I build reliable, <strong>LLM-powered systems</strong> and production backend
+            services. Currently pursuing my <strong>M.S. in Computer Science at NYU</strong>,
+            with 2+ years of professional software engineering experience.
+          </p>
+          <div class="hero__cta">
+            <a href="assets/Divyansh_Maurya_Resume.pdf" class="btn btn--primary" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Résumé
+            </a>
+            <a href="#contact" class="btn btn--outline">Get in touch</a>
+          </div>
+          <ul class="hero__meta">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              New York City
+            </li>
+            <li>
+              <a href="mailto:dm6602@nyu.edu">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+                dm6602@nyu.edu
+              </a>
+            </li>
+            <li>
+              <a href="tel:+16465544479">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +1 646 554 4479
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/divyansh-maurya/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="hero__socials reveal">
-          <a href="https://www.linkedin.com/in/divyansh-maurya/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-          </a>
-          <a href="mailto:dm6602@nyu.edu" aria-label="Email" class="social">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-          </a>
-          <a href="tel:+16465544479" aria-label="Phone" class="social">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </a>
-        </div>
+        <aside class="snapshot reveal">
+          <h2 class="snapshot__title">At a glance</h2>
+          <dl class="snapshot__list">
+            <div>
+              <dt>Education</dt>
+              <dd>M.S. Computer Science<span>New York University</span></dd>
+            </div>
+            <div>
+              <dt>Current role</dt>
+              <dd>AI Developer Intern<span>MSITEK · Princeton, NJ</span></dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>2+ years as SDE<span>Fastenal · 2022–2024</span></dd>
+            </div>
+            <div>
+              <dt>Focus areas</dt>
+              <dd>LLMs · RAG · Backend<span>Machine Learning &amp; APIs</span></dd>
+            </div>
+          </dl>
+        </aside>
       </div>
-
-      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
-        <span>Scroll</span>
-        <span class="hero__scroll-line"></span>
-      </a>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section" id="about">
+    <!-- ============ SUMMARY ============ -->
+    <section class="section" id="summary">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="section__num">01</span>
-          <h2 class="section__title">About</h2>
-        </div>
+        <header class="section__head reveal">
+          <p class="eyebrow">Background</p>
+          <h2 class="section__title">Professional Summary</h2>
+        </header>
 
-        <div class="about">
-          <div class="about__text reveal">
-            <p class="about__lead">
-              I'm an engineer who likes the hard, ambiguous problems at the edge of
-              <strong>AI and reliable software</strong>.
+        <div class="summary">
+          <div class="summary__body reveal">
+            <p>
+              I'm a software engineer focused on the intersection of <strong>applied AI and
+              reliable systems</strong>. At MSITEK, I'm building an LLM-augmented
+              document-intelligence pipeline — OCR plus LLM enrichment feeding a rule-based
+              decision engine that automates invoice matching for a global enterprise client.
+              I also designed its AI guardrails layer: prompt isolation, JSON-schema output
+              validation, RBAC, and audit logging.
             </p>
             <p>
-              At <strong>MSITEK</strong> I'm building an LLM-augmented document-intelligence
-              pipeline — OCR plus LLM enrichment feeding a rule-based decision engine that
-              automates invoice matching for a global enterprise. I designed its AI
-              guardrails layer: prompt isolation, JSON-schema output validation, RBAC, and
-              audit logging, alongside a multilingual agentic email system built on RAG.
-            </p>
-            <p>
-              Before NYU, I spent <strong>2+ years at Fastenal</strong> as a Software
-              Development Engineer, shipping RESTful APIs with 99.9% uptime and building
-              CI/CD infrastructure that cut deployment failures by 35%. I care about systems
-              that are fast, observable, and trustworthy — whether that's a microservice or a
-              guarded LLM call.
-            </p>
-            <p>
-              Outside work you'll find me training EEG classifiers for brain–computer
-              interfaces or simulating workforce dynamics — I like turning research-grade
-              ideas into things that actually run.
+              Previously, I spent <strong>2+ years as a Software Development Engineer at
+              Fastenal</strong>, where I shipped RESTful APIs with 99.9% uptime and built
+              CI/CD infrastructure that reduced deployment failures by 35%. I care about
+              software that is fast, observable, and trustworthy — and I bring that same rigor
+              to machine-learning work, from EEG-based brain–computer interfaces to workforce
+              forecasting models.
             </p>
           </div>
 
-          <aside class="about__side reveal">
-            <div class="stat-card">
-              <div class="stat" data-count="2" data-suffix="+">
-                <span class="stat__num">0</span>
-                <span class="stat__label">Years building production software</span>
-              </div>
-              <div class="stat" data-count="99.9" data-suffix="%" data-decimals="1">
-                <span class="stat__num">0</span>
-                <span class="stat__label">API uptime delivered at scale</span>
-              </div>
-              <div class="stat" data-count="88.1" data-suffix="%" data-decimals="1">
-                <span class="stat__num">0</span>
-                <span class="stat__label">Accuracy on BCI IV-2a (EEG model)</span>
-              </div>
-              <div class="stat" data-count="76" data-prefix="AIR ">
-                <span class="stat__num">0</span>
-                <span class="stat__label">All-India Rank · NIMCET 2019</span>
-              </div>
-            </div>
-
-            <div class="about__location">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Based in New York City
-            </div>
-          </aside>
+          <ul class="metrics reveal">
+            <li>
+              <span class="metrics__num">2+</span>
+              <span class="metrics__label">Years of professional engineering experience</span>
+            </li>
+            <li>
+              <span class="metrics__num">99.9%</span>
+              <span class="metrics__label">Production API uptime delivered at scale</span>
+            </li>
+            <li>
+              <span class="metrics__num">35%</span>
+              <span class="metrics__label">Reduction in deployment failures via CI/CD</span>
+            </li>
+            <li>
+              <span class="metrics__num">AIR 76</span>
+              <span class="metrics__label">All-India Rank, NIMCET 2019 entrance</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- ============ EXPERIENCE ============ -->
-    <section class="section" id="experience">
+    <section class="section section--alt" id="experience">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="section__num">02</span>
+        <header class="section__head reveal">
+          <p class="eyebrow">Work History</p>
           <h2 class="section__title">Experience</h2>
+        </header>
+
+        <div class="entries">
+          <article class="entry reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">AI Developer Intern</h3>
+                <p class="entry__org">MSITEK <span>· Princeton, New Jersey</span></p>
+              </div>
+              <span class="entry__date">Jun 2026 — Present</span>
+            </div>
+            <ul class="entry__points">
+              <li>Building an LLM-augmented document-intelligence pipeline (OCR + LLM enrichment for low-confidence fields) feeding a rule-based decision engine that automates invoice matching for a global enterprise client, processing high-volume transactions across geographies.</li>
+              <li>Designing the AI guardrails layer for LLM calls — prompt isolation, JSON-schema output validation, RBAC, and audit logging — and contributing to a multilingual agentic email-response system using RAG over enterprise data.</li>
+            </ul>
+            <ul class="chips">
+              <li>LLMs</li><li>RAG</li><li>OCR</li><li>AI Guardrails</li><li>Agentic Systems</li>
+            </ul>
+          </article>
+
+          <article class="entry reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">Software Development Engineer</h3>
+                <p class="entry__org">Fastenal <span>· Bangalore, India</span></p>
+              </div>
+              <span class="entry__date">Jul 2022 — Mar 2024</span>
+            </div>
+            <ul class="entry__points">
+              <li>Developed and deployed RESTful APIs with 99.9% uptime, enabling real-time data interaction and third-party integrations, boosting customer engagement by 30%.</li>
+              <li>Built and maintained CI/CD pipelines using Jenkins, Docker, and TeamCity, reducing deployment failures by 35% and improving release velocity.</li>
+              <li>Implemented TeamCity configuration-as-code using Kotlin DSL, enabling reproducible builds and operational consistency across environments.</li>
+            </ul>
+            <ul class="chips">
+              <li>REST APIs</li><li>Jenkins</li><li>Docker</li><li>TeamCity</li><li>Kotlin DSL</li><li>CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="entry reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">Software Development Engineer Intern</h3>
+                <p class="entry__org">Fastenal <span>· Bangalore, India</span></p>
+              </div>
+              <span class="entry__date">Jan 2022 — May 2022</span>
+            </div>
+            <ul class="entry__points">
+              <li>Implemented backend business logic in Node.js for a distributed supply-chain application, leveraging asynchronous processing to reduce latency by 40%.</li>
+              <li>Contributed to a microservices architecture deployed via automated pipelines (TeamCity, Octopus), increasing deployment frequency and system reliability.</li>
+            </ul>
+            <ul class="chips">
+              <li>Node.js</li><li>Microservices</li><li>Async Processing</li><li>Octopus</li>
+            </ul>
+          </article>
         </div>
-
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__top">
-                <h3 class="timeline__role">AI Developer Intern</h3>
-                <span class="timeline__date">Jun 2026 — Present</span>
-              </div>
-              <p class="timeline__org">MSITEK · Princeton, New Jersey</p>
-              <ul class="timeline__points">
-                <li>Building an LLM-augmented document-intelligence pipeline (OCR + LLM enrichment for low-confidence fields) feeding a rule-based decision engine that automates invoice matching for a global enterprise client, processing high-volume transactions across geographies.</li>
-                <li>Designing the AI guardrails layer for LLM calls — prompt isolation, JSON-schema output validation, RBAC, and audit logging — and contributing to a multilingual agentic email-response system using RAG over enterprise data.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">OCR</span><span class="tag">AI Guardrails</span><span class="tag">Agentic Systems</span>
-              </div>
-            </div>
-          </li>
-
-          <li class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__top">
-                <h3 class="timeline__role">Software Development Engineer</h3>
-                <span class="timeline__date">Jul 2022 — Mar 2024</span>
-              </div>
-              <p class="timeline__org">Fastenal · Bangalore, India</p>
-              <ul class="timeline__points">
-                <li>Developed and deployed RESTful APIs with 99.9% uptime, enabling real-time data interaction and third-party integrations, boosting customer engagement by 30%.</li>
-                <li>Built and maintained CI/CD pipelines using Jenkins, Docker, and TeamCity, reducing deployment failures by 35% and improving release velocity.</li>
-                <li>Implemented TeamCity configuration-as-code using Kotlin DSL, enabling reproducible builds and operational consistency across environments.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">REST APIs</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">TeamCity</span><span class="tag">Kotlin DSL</span><span class="tag">CI/CD</span>
-              </div>
-            </div>
-          </li>
-
-          <li class="timeline__item reveal">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__top">
-                <h3 class="timeline__role">Software Development Engineer Intern</h3>
-                <span class="timeline__date">Jan 2022 — May 2022</span>
-              </div>
-              <p class="timeline__org">Fastenal · Bangalore, India</p>
-              <ul class="timeline__points">
-                <li>Implemented backend business logic in Node.js for a distributed supply-chain application, leveraging asynchronous processing to reduce latency by 40%.</li>
-                <li>Contributed to a microservices architecture deployed via automated pipelines (TeamCity, Octopus), increasing deployment frequency and system reliability.</li>
-              </ul>
-              <div class="tags">
-                <span class="tag">Node.js</span><span class="tag">Microservices</span><span class="tag">Async</span><span class="tag">Octopus</span>
-              </div>
-            </div>
-          </li>
-        </ol>
       </div>
     </section>
 
     <!-- ============ PROJECTS ============ -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="section__num">03</span>
-          <h2 class="section__title">Featured Projects</h2>
-        </div>
+        <header class="section__head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="section__title">Projects</h2>
+        </header>
 
-        <div class="projects">
-          <article class="project reveal">
-            <div class="project__glow"></div>
-            <div class="project__head">
-              <div class="project__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 0 6 3 3 0 0 0 3 3v1a3 3 0 0 0 6 0v-1a3 3 0 0 0 3-3 3 3 0 0 0 0-6 3 3 0 0 0-3-3V5a3 3 0 0 0-3-3z"/><path d="M9 9h.01M15 9h.01M9 15h.01M15 15h.01"/></svg>
-              </div>
-              <span class="project__period">Feb 2026 — Apr 2026</span>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__head">
+              <h3 class="card__title">EEG-Based Directional Brainwave Classification for Assistive BCI</h3>
+              <span class="card__date">Feb — Apr 2026</span>
             </div>
-            <h3 class="project__title">EEG-Based Directional Brainwave Classification for Assistive BCI</h3>
-            <p class="project__desc">
-              A brain–computer interface that classifies EEG into 3 motor-imagery intents
-              with an EEGNet + ShallowConvNet ensemble — pre-trained on 153 subjects across
-              3 datasets with 50-shot per-user fine-tuning, reaching <strong>88.1% accuracy</strong>
-              on BCI IV-2a. Real-time inference runs on FastAPI + Kafka with a LangGraph agent
-              loop for quality checks, plus pgvector retrieval to explain each prediction.
+            <p class="card__desc">
+              A brain–computer interface that classifies EEG into three motor-imagery intents
+              using an EEGNet + ShallowConvNet ensemble — pre-trained on 153 subjects across
+              three datasets with 50-shot per-user fine-tuning, reaching <strong>88.1%
+              accuracy</strong> on BCI IV-2a. Real-time inference runs on FastAPI + Kafka with
+              a LangGraph agent loop for quality checks, plus pgvector retrieval to explain
+              each prediction.
             </p>
-            <div class="tags">
-              <span class="tag">PyTorch</span><span class="tag">EEGNet</span><span class="tag">FastAPI</span><span class="tag">Kafka</span><span class="tag">LangGraph</span><span class="tag">pgvector</span>
-            </div>
+            <ul class="chips">
+              <li>PyTorch</li><li>EEGNet</li><li>FastAPI</li><li>Kafka</li><li>LangGraph</li><li>pgvector</li>
+            </ul>
           </article>
 
-          <article class="project reveal">
-            <div class="project__glow"></div>
-            <div class="project__head">
-              <div class="project__icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 4 3 5-7"/></svg>
-              </div>
-              <span class="project__period">Oct 2025 — Nov 2025</span>
+          <article class="card reveal">
+            <div class="card__head">
+              <h3 class="card__title">AI Workforce Digital Twin for Attrition &amp; Succession Forecasting</h3>
+              <span class="card__date">Oct — Nov 2025</span>
             </div>
-            <h3 class="project__title">AI Workforce Digital Twin for Attrition & Succession Forecasting</h3>
-            <p class="project__desc">
+            <p class="card__desc">
               A workforce digital-twin simulator forecasting 5-year mid-level leadership gaps
               and stress-testing HR what-ifs (retirement, upskilling, DEI) — exposing
-              <strong>~50% of gaps</strong> missed by static plans. Benchmarked 7 attrition
+              <strong>~50% of gaps</strong> missed by static plans. Benchmarked seven attrition
               classifiers via GridSearchCV on IBM HR data (1,470×35), coupling the best model
               with an IC → Manager → Senior Leader pipeline simulator.
             </p>
-            <div class="tags">
-              <span class="tag">scikit-learn</span><span class="tag">Pandas</span><span class="tag">GridSearchCV</span><span class="tag">Simulation</span><span class="tag">Forecasting</span>
-            </div>
+            <ul class="chips">
+              <li>scikit-learn</li><li>Pandas</li><li>GridSearchCV</li><li>Simulation</li><li>Forecasting</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ SKILLS ============ -->
-    <section class="section" id="skills">
+    <section class="section section--alt" id="skills">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="section__num">04</span>
+        <header class="section__head reveal">
+          <p class="eyebrow">Toolbox</p>
           <h2 class="section__title">Technical Skills</h2>
-        </div>
+        </header>
 
         <div class="skills">
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19"/></svg>
-              AI / ML
-            </h3>
-            <div class="tags tags--lg">
-              <span class="tag">PyTorch</span><span class="tag">scikit-learn</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Transformers</span><span class="tag">RAG</span><span class="tag">Prompt Engineering</span><span class="tag">Data Preprocessing</span>
-            </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">AI / ML</h3>
+            <ul class="chips">
+              <li>PyTorch</li><li>scikit-learn</li><li>NumPy</li><li>Pandas</li><li>Transformers</li><li>RAG</li><li>Prompt Engineering</li><li>Data Preprocessing</li>
+            </ul>
           </div>
-
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
-              Languages
-            </h3>
-            <div class="tags tags--lg">
-              <span class="tag">Python</span><span class="tag">C / C++</span><span class="tag">SQL</span><span class="tag">JavaScript</span>
-            </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Programming Languages</h3>
+            <ul class="chips">
+              <li>Python</li><li>C / C++</li><li>SQL</li><li>JavaScript</li>
+            </ul>
           </div>
-
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-              Systems
-            </h3>
-            <div class="tags tags--lg">
-              <span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">Multithreading</span><span class="tag">OOP</span><span class="tag">Operating Systems</span><span class="tag">Memory Management</span>
-            </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Systems</h3>
+            <ul class="chips">
+              <li>Data Structures</li><li>Algorithms</li><li>Multithreading</li><li>OOP</li><li>Operating Systems</li><li>Memory Management</li>
+            </ul>
           </div>
-
-          <div class="skill-group reveal">
-            <h3 class="skill-group__title">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              Cloud & DevOps
-            </h3>
-            <div class="tags tags--lg">
-              <span class="tag">Docker</span><span class="tag">GCP</span><span class="tag">Firebase</span><span class="tag">Jenkins</span><span class="tag">TeamCity</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">Linux</span>
-            </div>
+          <div class="skill reveal">
+            <h3 class="skill__title">Cloud &amp; DevOps</h3>
+            <ul class="chips">
+              <li>Docker</li><li>GCP</li><li>Firebase</li><li>Jenkins</li><li>TeamCity</li><li>CI/CD</li><li>Git</li><li>Linux</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -372,84 +338,77 @@
     <!-- ============ EDUCATION ============ -->
     <section class="section" id="education">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="section__num">05</span>
+        <header class="section__head reveal">
+          <p class="eyebrow">Academics</p>
           <h2 class="section__title">Education</h2>
+        </header>
+
+        <div class="entries">
+          <article class="entry entry--edu reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">New York University</h3>
+                <p class="entry__org">Master of Science in Computer Science <span>· New York City, USA</span></p>
+              </div>
+              <span class="entry__date">Sep 2025 — May 2027</span>
+            </div>
+            <p class="entry__note">Relevant coursework: Machine Learning · Natural Language Processing · Artificial Intelligence · Big Data · Design &amp; Analysis of Algorithms</p>
+          </article>
+
+          <article class="entry entry--edu reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">National Institute of Technology, Tiruchirappalli</h3>
+                <p class="entry__org">Master of Computer Applications <span>· Tamil Nadu, India</span></p>
+              </div>
+              <span class="entry__date">Aug 2019 — May 2022</span>
+            </div>
+            <p class="entry__note">Admitted via NIMCET 2019 with All-India Rank 76.</p>
+          </article>
+
+          <article class="entry entry--edu reveal">
+            <div class="entry__head">
+              <div>
+                <h3 class="entry__role">Banaras Hindu University</h3>
+                <p class="entry__org">B.Sc. (Hons.) in Computer Science <span>· Varanasi, India</span></p>
+              </div>
+              <span class="entry__date">Aug 2015 — May 2018</span>
+            </div>
+            <p class="entry__note">Foundations in computer science, mathematics, and systems.</p>
+          </article>
         </div>
 
-        <div class="edu">
-          <article class="edu__card reveal">
-            <div class="edu__date">Sep 2025 — May 2027</div>
-            <h3 class="edu__school">New York University</h3>
-            <p class="edu__degree">Master of Science in Computer Science</p>
-            <p class="edu__meta">New York City, USA</p>
-            <p class="edu__extra">Coursework: Machine Learning · NLP · Artificial Intelligence · Big Data · Design & Analysis of Algorithms</p>
-          </article>
-
-          <article class="edu__card reveal">
-            <div class="edu__date">Aug 2019 — May 2022</div>
-            <h3 class="edu__school">NIT Tiruchirappalli</h3>
-            <p class="edu__degree">Master of Computer Applications</p>
-            <p class="edu__meta">Tamil Nadu, India</p>
-            <p class="edu__extra">All-India Rank 76 · NIMCET 2019 entrance exam</p>
-          </article>
-
-          <article class="edu__card reveal">
-            <div class="edu__date">Aug 2015 — May 2018</div>
-            <h3 class="edu__school">Banaras Hindu University</h3>
-            <p class="edu__degree">B.Sc. (Hons.) in Computer Science</p>
-            <p class="edu__meta">Varanasi, India</p>
-            <p class="edu__extra">Foundations in CS, mathematics & systems</p>
-          </article>
-        </div>
-
-        <!-- Achievements strip -->
-        <div class="achievements reveal">
-          <h3 class="achievements__title">Achievements</h3>
-          <ul class="achievements__list">
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
-              Represented <strong>NYU</strong> in the NASA Space Apps Challenge 2025
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
-              Finalist · <strong>Sangam Hackathon</strong>, Pragyan 2021 (NIT Trichy)
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-              <strong>All-India Rank 76</strong> · NIMCET 2019 (NIT MCA entrance)
-            </li>
+        <div class="awards reveal">
+          <h3 class="awards__title">Achievements</h3>
+          <ul class="awards__list">
+            <li>Represented <strong>NYU</strong> in the NASA Space Apps Challenge 2025.</li>
+            <li>Finalist in the <strong>Sangam Hackathon</strong>, Pragyan 2021 (ISO-certified international tech fest) at NIT Trichy.</li>
+            <li>Secured <strong>All-India Rank 76</strong> in NIMCET 2019 (NIT MCA Common Entrance Test).</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="section section--contact" id="contact">
+    <section class="section section--alt" id="contact">
       <div class="container">
         <div class="contact reveal">
-          <span class="section__num">06</span>
-          <h2 class="contact__title">Let's build something<br/><span class="gradient-text">intelligent</span> together.</h2>
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="section__title">Let's work together</h2>
           <p class="contact__sub">
-            I'm open to AI / ML engineering and software roles, research collaborations,
-            and interesting problems. The fastest way to reach me is email.
+            I'm open to AI / ML engineering and software development roles, research
+            collaborations, and interesting technical problems. Email is the fastest way to
+            reach me.
           </p>
-
           <div class="contact__actions">
-            <a href="mailto:dm6602@nyu.edu" class="btn btn--primary btn--lg">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            <a href="mailto:dm6602@nyu.edu" class="btn btn--primary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
               dm6602@nyu.edu
             </a>
-            <a href="https://www.linkedin.com/in/divyansh-maurya/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              LinkedIn
+            <a href="https://www.linkedin.com/in/divyansh-maurya/" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              Connect on LinkedIn
             </a>
-          </div>
-
-          <div class="contact__meta">
-            <a href="tel:+16465544479">+1 646 554 4479</a>
-            <span class="dot-sep">·</span>
-            <span>New York City</span>
           </div>
         </div>
       </div>
@@ -459,12 +418,13 @@
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="footer__brand">DM</span>
-      <p class="footer__copy">© <span id="year"></span> Divyansh Maurya. Designed & built with care.</p>
-      <a href="#hero" class="footer__top" aria-label="Back to top">
-        Back to top
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-      </a>
+      <p class="footer__copy">© <span id="year"></span> Divyansh Maurya. All rights reserved.</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="mailto:dm6602@nyu.edu">Email</a>
+        <a href="https://www.linkedin.com/in/divyansh-maurya/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/Divyansh_Maurya_Resume.pdf" download>Résumé</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
     </div>
   </footer>
 
