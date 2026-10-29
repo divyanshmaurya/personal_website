@@ -1,10 +1,11 @@
 # Divyansh Maurya — Personal Website
 
-A premium, fully responsive personal portfolio for **Divyansh Maurya** — MS Computer
-Science @ NYU, AI Developer, and Software Engineer.
+A clean, professional personal portfolio for **Divyansh Maurya** — AI & Software
+Engineer, M.S. Computer Science @ NYU. Builds agentic AI systems and ships 0→1 products.
 
-🔗 **Live site:** _enable GitHub Pages to publish (see below)_
+🔗 **Live site:** `https://divyanshmaurya.github.io/personal_website/`
 🔗 **LinkedIn:** https://www.linkedin.com/in/divyansh-maurya/
+🔗 **GitHub:** https://github.com/divyanshmaurya
 
 ---
 
