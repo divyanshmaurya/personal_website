@@ -2,7 +2,11 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # `main` is the intended production branch. The second entry is a temporary
+    # workaround: GitHub Pages only lets the repository's DEFAULT branch deploy,
+    # and the default is currently `claude/gracious-clarke-1qxqww`. Once `main`
+    # is made the default branch, this second entry can be removed.
+    branches: [main, claude/gracious-clarke-1qxqww]
   workflow_dispatch:
 
 permissions:
