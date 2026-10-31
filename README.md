@@ -3,7 +3,7 @@
 A clean, professional personal portfolio for **Divyansh Maurya** — AI & Software
 Engineer, M.S. Computer Science @ NYU. Builds agentic AI systems and ships 0→1 products.
 
-🔗 **Live site:** `https://divyanshmaurya.github.io/personal_website/`
+🔗 **Live site:** https://divyanshmaurya.com (hosted on Vercel)
 🔗 **LinkedIn:** https://www.linkedin.com/in/divyansh-maurya/
 🔗 **GitHub:** https://github.com/divyanshmaurya
 

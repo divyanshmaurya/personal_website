@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://divyanshmaurya.github.io/personal_website/sitemap.xml
+Sitemap: https://divyanshmaurya.com/sitemap.xml
