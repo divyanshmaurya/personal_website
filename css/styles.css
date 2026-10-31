@@ -192,6 +192,10 @@ strong { color: var(--ink); font-weight: 600; }
 .entry--edu .entry__date { background: var(--accent-soft); border-color: transparent; color: var(--accent-dark); }
 .entry__note { font-size: 14.5px; color: var(--muted); line-height: 1.6; }
 
+/* Inline links within body content */
+.entry__points a, .entry__note a, .card__desc a { color: var(--accent); font-weight: 500; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.entry__points a:hover, .entry__note a:hover, .card__desc a:hover { border-bottom-color: var(--accent); }
+
 /* Chips */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { font-size: 13px; font-weight: 500; padding: 5px 12px; border-radius: 7px; background: var(--bg-alt); border: 1px solid var(--border); color: var(--muted); }
