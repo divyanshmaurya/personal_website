@@ -32,7 +32,8 @@ personal_website/
 ├── assets/
 │   ├── favicon.svg            # DM monogram favicon
 │   └── Divyansh_Maurya_Resume.pdf
-├── .github/workflows/deploy.yml
+├── sitemap.xml · robots.txt    # SEO
+├── vercel.json                 # Vercel config (security headers, clean URLs)
 └── README.md
 ```
 
@@ -46,18 +47,18 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## 🌐 Deploy to GitHub Pages
+## 🌐 Hosting
 
-This repo ships with a GitHub Actions workflow (`.github/workflows/deploy.yml`).
+The site is hosted on **Vercel** with the custom domain **https://divyanshmaurya.com**.
+Every push to `main` triggers an automatic production deploy — there's no build step,
+so Vercel serves the static files from the repo root as-is.
 
-1. Push these files to the `main` branch.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. The site deploys automatically on every push to `main`. Your URL will be
-   `https://<username>.github.io/personal_website/`.
+- `vercel.json` sets security headers (HSTS, Content-Security-Policy,
+  X-Content-Type-Options, Referrer-Policy, …) and enables clean URLs.
 
-> Prefer the classic flow? You can instead pick **Deploy from a branch → main → / (root)**
-> under Settings → Pages — the site is plain static files at the repo root.
+To deploy your own copy: import the repo at [vercel.com/new](https://vercel.com/new),
+keep the framework preset as **Other** (no build command, output directory = root),
+then add your domain under the project's **Settings → Domains**.
 
 ## 🎨 Customize
 
