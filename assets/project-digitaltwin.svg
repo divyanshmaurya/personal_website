@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Forecast of a widening five-year leadership gap versus a static plan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1736"/><stop offset="0.55" stop-color="#102a63"/><stop offset="1" stop-color="#0a1736"/></linearGradient>
+    <linearGradient id="gap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.38"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0.02"/></linearGradient>
+    <radialGradient id="pt" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#a5f3fc"/><stop offset="1" stop-color="#2563eb"/></radialGradient>
+    <filter id="glow" x="-60%" y="-120%" width="220%" height="340%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="430" fill="url(#bg)"/>
+  <line x1="80" y1="55" x2="930" y2="55" stroke="#ffffff" stroke-opacity="0.06"/><line x1="80" y1="131" x2="930" y2="131" stroke="#ffffff" stroke-opacity="0.06"/><line x1="80" y1="208" x2="930" y2="208" stroke="#ffffff" stroke-opacity="0.06"/><line x1="80" y1="284" x2="930" y2="284" stroke="#ffffff" stroke-opacity="0.06"/><line x1="80" y1="360" x2="930" y2="360" stroke="#ffffff" stroke-opacity="0.06"/>
+  <line x1="80" y1="55" x2="80" y2="360" stroke="#ffffff" stroke-opacity="0.22"/>
+  <line x1="80" y1="360" x2="930" y2="360" stroke="#ffffff" stroke-opacity="0.22"/>
+  <path d="M 80.0 305.1 L 250.0 268.5 L 420.0 225.8 L 590.0 177.0 L 760.0 122.1 L 930.0 70.3 L 930.0 219.7 L 760.0 238.0 L 590.0 253.2 L 420.0 268.5 L 250.0 286.8 L 80.0 305.1 Z" fill="url(#gap)"/>
+  <path d="M 80.0 305.1 L 250.0 286.8 L 420.0 268.5 L 590.0 253.2 L 760.0 238.0 L 930.0 219.7" fill="none" stroke="#7dd3fc" stroke-opacity="0.55" stroke-width="2.4" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <path d="M 80.0 305.1 L 250.0 268.5 L 420.0 225.8 L 590.0 177.0" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M 590.0 177.0 L 760.0 122.1 L 930.0 70.3" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-dasharray="7 6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="80.0" cy="305.1" r="5" fill="url(#pt)" filter="url(#glow)"/><circle cx="250.0" cy="268.5" r="5" fill="url(#pt)" filter="url(#glow)"/><circle cx="420.0" cy="225.8" r="5" fill="url(#pt)" filter="url(#glow)"/><circle cx="590.0" cy="177.0" r="5" fill="url(#pt)" filter="url(#glow)"/><circle cx="760.0" cy="122.1" r="5" fill="url(#pt)" filter="url(#glow)"/><circle cx="930.0" cy="70.3" r="5" fill="url(#pt)" filter="url(#glow)"/>
+</svg>

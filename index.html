@@ -15,9 +15,14 @@
   <meta property="og:title" content="Divyansh Maurya — AI Engineer & Software Engineer" />
   <meta property="og:description" content="Builds LLM-powered products — agents, RAG, guardrails. Owned an AI platform approved for the SAP Store. M.S. CS @ NYU." />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://divyanshmaurya.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Divyansh Maurya — AI Engineer & Software Engineer" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Divyansh Maurya — AI Engineer & Software Engineer" />
   <meta name="twitter:description" content="Builds LLM-powered products — agents, RAG, guardrails. SAP Store–approved AI platform. M.S. CS @ NYU." />
+  <meta name="twitter:image" content="https://divyanshmaurya.com/assets/og-image.jpg" />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,6 +70,7 @@
       <a href="#experience">Experience</a>
       <a href="#teaching">Leadership</a>
       <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
@@ -324,7 +330,7 @@
         </header>
 
         <div class="cards">
-          <article class="card reveal">
+          <article class="card card--featured reveal">
             <img class="card__media" src="assets/project-bci.svg" width="1200" height="330" alt="Abstract EEG brainwaves flowing into a neural network" loading="lazy" />
             <div class="card__head">
               <h3 class="card__title">Brain-Controlled Wheelchair — Agentic Real-Time AI on EEG</h3>
@@ -343,12 +349,78 @@
               <li>PyTorch</li><li>EEGNet</li><li>LangGraph</li><li>pgvector</li><li>Kafka</li><li>Spark</li><li>Delta Lake</li>
             </ul>
           </article>
+
+          <article class="card reveal">
+            <img class="card__media" src="assets/project-digitaltwin.svg" width="1000" height="430" alt="Forecast chart of a widening five-year leadership gap versus a static plan" loading="lazy" />
+            <div class="card__head">
+              <h3 class="card__title">AI Workforce Digital Twin — Attrition &amp; Succession Forecasting</h3>
+              <span class="card__date">Oct — Nov 2025</span>
+            </div>
+            <p class="card__desc">
+              Ran chi-square tests and logistic regression in R on IBM HR data
+              (<strong>1,470 × 35</strong>), comparing <strong>seven classifiers</strong> via
+              cross-validation, then simulated 5-year leadership gaps under HR what-if scenarios
+              in R Markdown — exposing succession gaps that static plans miss.
+            </p>
+            <ul class="chips">
+              <li>R</li><li>Logistic Regression</li><li>Cross-Validation</li><li>Simulation</li><li>R Markdown</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <img class="card__media" src="assets/project-student.svg" width="1000" height="430" alt="Scatter plot of student-performance data with a fitted regression line" loading="lazy" />
+            <div class="card__head">
+              <h3 class="card__title">Student Performance Analysis</h3>
+              <span class="card__date">2018</span>
+            </div>
+            <p class="card__desc">
+              Applied correlation, t-tests, and linear regression in R to student-performance
+              data to surface the factors most associated with outcomes — delivered as a
+              reproducible <strong>R Markdown</strong> study (undergraduate project, BHU).
+            </p>
+            <ul class="chips">
+              <li>R</li><li>Linear Regression</li><li>Hypothesis Testing</li><li>R Markdown</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WRITING & TALKS ============ -->
+    <section class="section" id="writing">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Output</p>
+          <h2 class="section__title">Writing &amp; Talks</h2>
+        </header>
+
+        <div class="writing">
+          <article class="wcard reveal">
+            <span class="wcard__kind">Publication</span>
+            <h3 class="wcard__title">EEG-Based Directional Brainwave Classification for Assistive BCI</h3>
+            <p class="wcard__meta">IEEE-format paper · 2026 — hypotheses tested across 33 experiment configurations over 153 subjects and 3 EEG datasets.</p>
+            <a class="wcard__link" href="#projects">See the project →</a>
+          </article>
+
+          <article class="wcard reveal">
+            <span class="wcard__kind">Technical Blog</span>
+            <h3 class="wcard__title">ISC Coders @ BHU</h3>
+            <p class="wcard__meta">Write-ups and instructional materials from the technical workshops I ran for undergraduate and graduate students.</p>
+            <a class="wcard__link" href="https://isccodersbhu.wordpress.com" target="_blank" rel="noopener">isccodersbhu.wordpress.com →</a>
+          </article>
+
+          <article class="wcard reveal">
+            <span class="wcard__kind">Invited Talk</span>
+            <h3 class="wcard__title">Guest Speaker — Softrec NITT AGM '26</h3>
+            <p class="wcard__meta">Invited to speak at NIT Tiruchirappalli; ongoing mentor to students at NIT Trichy and BHU.</p>
+            <span class="wcard__link wcard__link--static">NIT Tiruchirappalli</span>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ============ SKILLS ============ -->
-    <section class="section" id="skills">
+    <section class="section section--alt" id="skills">
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Toolbox</p>
@@ -397,7 +469,7 @@
     </section>
 
     <!-- ============ EDUCATION ============ -->
-    <section class="section section--alt" id="education">
+    <section class="section" id="education">
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow">Academics</p>
@@ -452,7 +524,7 @@
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact">
+    <section class="section section--alt" id="contact">
       <div class="container">
         <div class="contact reveal">
           <p class="eyebrow">Get in touch</p>
