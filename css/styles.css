@@ -240,6 +240,8 @@ strong { color: var(--text); font-weight: 600; }
 .about__side { border-left: 1px solid var(--border); padding-left: 32px; }
 .about__side .mono { display: block; margin-bottom: 12px; color: var(--green-dim); }
 .about__side p { color: var(--text-dim); font-size: 14.5px; margin-bottom: 20px; }
+.about__photo { width: 100%; max-width: 250px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border: 1px solid var(--border-2); border-radius: var(--radius); margin-bottom: 26px; filter: grayscale(0.28) contrast(1.02) brightness(0.97); transition: filter .45s var(--ease); }
+.about__photo:hover { filter: grayscale(0) contrast(1) brightness(1); }
 
 /* ============================================================ EDUCATION + SKILLS */
 .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
